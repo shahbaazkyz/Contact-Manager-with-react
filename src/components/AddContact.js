@@ -5,11 +5,25 @@ const AddContact = ({take}) => {
     const [numb, setNumb] = useState("");
 
     const send = (e) => {
-        e.preventDefault();
+      e.preventDefault();
+      if (name.length === 0) {
+        alert("Please enter contact name!")
+          document.getElementById("name").focus();
+      }
+      else if (numb.length === 0) {
+          alert("Please enter number!");
+          document.getElementById("number").focus();
+      }
+      else if (numb.length < 11) {
+        alert("Number length must be 11 digits!")
+        document.getElementById("number").focus()
+      }
+      else {
         take(name, numb);
         setName("");
         setNumb("");
         document.getElementById("name").focus()
+      }
     }
 
   return (
