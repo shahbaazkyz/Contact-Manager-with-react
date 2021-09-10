@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .headerr{
@@ -14,4 +14,59 @@ body{
 
 .addContact{
   padding-top: 50px;
+}
+
+.content{
+  width: 95% !important ;
+}
+
+
+.footer {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer p {
+  margin: 0 0 15px;
+}
+.footer i {
+  padding: 0 3px;
+  color: inherit;
+  font-size: medium;
+}
+.footer a {
+  margin-left: 3px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+.footer a i {
+  padding-left: 0;
+}
+.footer .fa-heart {
+  color: #e74c3c;
+}
+
+.icon:hover{
+  cursor: pointer;
+}
+
+.header{
+  font-size: x-large;
+  line-height: 1.5;
+}
+
+.avatar{
+  margin-top: 8px !important;
+}
+
+@media screen and (max-width: 600px) {
+ .content{
+  width: 88% !important ;
+}
+
 }

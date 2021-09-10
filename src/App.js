@@ -5,6 +5,7 @@ import { uuid } from "uuidv4";
 
 import "./App.css"
 import { useEffect, useState } from "react";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -23,7 +24,6 @@ function App() {
   }, [contacts])
 
   const take = (a, b) => {
-  const id = Math.random()
    const data = [...contacts , { id : uuid() , name : a , numb : b  }]
    setContact(data)
   }
@@ -42,7 +42,8 @@ function App() {
     <div className = "ui container" >
       <Header  />
       <AddContact take = {take}  />
-      <ContactList contacts = {contacts} removeContact = {removeContact} />
+      <ContactList contacts={contacts} removeContact={removeContact} />
+      <Footer />
     </div>
   );
 }

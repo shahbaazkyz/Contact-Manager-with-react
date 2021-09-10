@@ -3,7 +3,9 @@ const Header = () => {
     <>
       <div className="headerr">
         <h1  >Contact Manager</h1>
+        
       </div>
+      
     </>
   );
 };
