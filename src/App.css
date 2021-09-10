@@ -70,3 +70,11 @@ body{
 }
 
 }
+
+
+.noContact{
+  margin: 0px auto;
+    color: rebeccapurple;
+    border-bottom: 2px solid red;
+    width: max-content;
+}

@@ -4,7 +4,9 @@ import "../App.css"
 const ContactCard = ({ contacts, removeContact }) => {
   return (
     <>
-      {contacts.map((val) => {
+      
+      {
+        contacts.length > 0 ?  <>     {contacts.map((val) => {
         return (
           <div className="item" key={val.id}>
             <img className="ui avatar image" src={user} alt="user" />
@@ -24,7 +26,8 @@ const ContactCard = ({ contacts, removeContact }) => {
             
           </div>
         );
-      })}
+      })} </> : <> <h1 className = "noContact" >Please Add contacts</h1> </>
+      }
     </>
   );
 };
